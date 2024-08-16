@@ -19,9 +19,10 @@ class ScrollViewController: UIViewController, UIScrollViewDelegate {
         scrollView.backgroundColor = .lightGray
         
         // 設定 contentInset
-        //scrollView.contentInset = UIEdgeInsets(top: 0, left: 70, bottom: 0, right: 70)
+        scrollView.contentInset = UIEdgeInsets(top: 70, left: 70, bottom: 70, right: 70)
+        
         scrollView.isPagingEnabled = true // 開啟分頁
-        scrollView.delegate = self // 設置代理
+        scrollView.delegate = self // 設置 delegate
         
         view.addSubview(scrollView)
         

@@ -11,6 +11,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         let orangeView = UIView()
         orangeView.backgroundColor = orangeColor
         let blueView = UIView()
@@ -26,9 +27,12 @@ class ViewController: UIViewController {
         
         orangeView.addSubview(blueView)
         
-        //orangeView.bounds = CGRect(x: -100, y: -100, width: 300, height: 500)
-        print(orangeView.bounds)
-        print(blueView.frame)
+        orangeView.bounds = CGRect(x: -100, y: -100, width: 300, height: 500)
+        
+        print("Orange View frame:\n\(orangeView.frame)")
+//        print("Orange View bounds:\n\(orangeView.bounds)")
+//        print("Blue View frame:\n\(blueView.frame)")
+//        print("Blue View bounds:\n\(blueView.bounds)")
     }
 }
 
