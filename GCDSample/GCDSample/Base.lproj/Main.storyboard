@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GCDSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iY8-KP-e2R">
+                                <rect key="frame" x="101.66666666666669" y="139" width="190" height="63"/>
+                                <color key="backgroundColor" red="0.80784313730000001" green="0.83529411760000005" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="190" id="hsv-Qy-gTs"/>
+                                    <constraint firstAttribute="height" constant="63" id="k5L-C0-5rF"/>
+                                </constraints>
+                                <color key="tintColor" red="0.52428006524235304" green="0.68325363371106118" blue="0.9464295506477356" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Start">
+                                    <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="startToRun1" destination="BYZ-38-t0r" eventType="touchUpInside" id="bDc-PY-IeO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBc-9B-IGE">
+                                <rect key="frame" x="101.66666666666669" y="282" width="190" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="Jqj-dJ-2S3"/>
+                                    <constraint firstAttribute="width" constant="190" id="Zyv-rg-WIb"/>
+                                </constraints>
+                                <color key="tintColor" red="0.77480487685711896" green="0.82670167627352453" blue="0.79326300436620423" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Start">
+                                    <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="startToRun2" destination="BYZ-38-t0r" eventType="touchUpInside" id="tXX-tF-cdT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C0x-Np-lB2">
+                                <rect key="frame" x="101.66666666666669" y="425" width="190" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="190" id="36u-Xf-0NJ"/>
+                                    <constraint firstAttribute="height" constant="63" id="WH9-CJ-Mhu"/>
+                                </constraints>
+                                <color key="tintColor" red="0.77243458949234689" green="0.74511557020697217" blue="0.93523782431779789" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Start">
+                                    <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="startToRun3" destination="BYZ-38-t0r" eventType="touchUpInside" id="QBZ-KC-qqc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKD-Ic-Wow">
+                                <rect key="frame" x="101.66666666666669" y="568" width="190" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="190" id="Fcv-OT-LqX"/>
+                                    <constraint firstAttribute="height" constant="63" id="XIV-Ov-jGe"/>
+                                </constraints>
+                                <color key="tintColor" red="0.93743631678010952" green="0.76994349952425167" blue="0.69149418708536514" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Start">
+                                    <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="startToRun4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aXh-5f-fQK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iGE-HW-Cbm">
+                                <rect key="frame" x="124" y="681" width="145" height="68"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="52"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vmS-IL-TZk">
+                                <rect key="frame" x="294" y="695" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="LeH-es-qTC"/>
+                                    <constraint firstAttribute="height" constant="40" id="qKx-0h-wgS"/>
+                                </constraints>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.triangle.2.circlepath" catalog="system"/>
+                                <connections>
+                                    <action selector="resetTimeLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Maa-Hd-Vow"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.96610003140703515" green="0.92597945425186023" blue="0.90321506103936711" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="vmS-IL-TZk" firstAttribute="leading" secondItem="iGE-HW-Cbm" secondAttribute="trailing" constant="25" id="25g-LV-99k"/>
+                            <constraint firstItem="gKD-Ic-Wow" firstAttribute="top" secondItem="C0x-Np-lB2" secondAttribute="bottom" constant="80" id="45l-s2-s5K"/>
+                            <constraint firstItem="iGE-HW-Cbm" firstAttribute="top" secondItem="gKD-Ic-Wow" secondAttribute="bottom" constant="50" id="9pL-QM-Bhn"/>
+                            <constraint firstItem="vmS-IL-TZk" firstAttribute="centerY" secondItem="iGE-HW-Cbm" secondAttribute="centerY" id="Afp-zO-Cf4"/>
+                            <constraint firstItem="iY8-KP-e2R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BRs-jE-8L3"/>
+                            <constraint firstItem="JBc-9B-IGE" firstAttribute="top" secondItem="iY8-KP-e2R" secondAttribute="bottom" constant="80" id="HI1-Uh-LzI"/>
+                            <constraint firstItem="iY8-KP-e2R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lb1-pW-rQ3"/>
+                            <constraint firstItem="C0x-Np-lB2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QUJ-IC-Hn3"/>
+                            <constraint firstItem="C0x-Np-lB2" firstAttribute="top" secondItem="JBc-9B-IGE" secondAttribute="bottom" constant="80" id="RjO-bj-Mhd"/>
+                            <constraint firstItem="JBc-9B-IGE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WkQ-dd-bId"/>
+                            <constraint firstItem="iGE-HW-Cbm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ca6-8h-ze7"/>
+                            <constraint firstItem="iY8-KP-e2R" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="wgO-pP-8d8"/>
+                            <constraint firstItem="gKD-Ic-Wow" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yql-FB-JYL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="timeLabel" destination="iGE-HW-Cbm" id="1Bl-RG-Kag"/>
+                        <outlet property="timerButton" destination="gKD-Ic-Wow" id="sjm-pR-adb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="165.64885496183206" y="2.8169014084507045"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.triangle.2.circlepath" catalog="system" width="128" height="104"/>
+    </resources>
+</document>
