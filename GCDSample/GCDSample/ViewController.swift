@@ -33,7 +33,7 @@ class ViewController: UIViewController {
         NStimer?.invalidate()
     }
     
-// MARK: - GCD Group
+    // MARK: - GCD Group
     @IBAction func startToRun1() {
         let group: DispatchGroup = DispatchGroup()
         
@@ -116,7 +116,7 @@ class ViewController: UIViewController {
         
     }
     
-// MARK: - GCD Barrier
+    // MARK: - GCD Barrier
     @IBAction func startToRun3() {
         let queue = DispatchQueue(label: "queue", attributes: .concurrent)
         var sharedData = [String]()
@@ -157,6 +157,53 @@ class ViewController: UIViewController {
         }
     }
     
+    func startToRun4() {
+
+        // 建立一個串行隊列來模擬單線程環境
+        let singleThreadQueue = DispatchQueue(label: "com.example.singleThreadQueue")
+
+        // 建立一個 concurrent 任務組
+        let group = DispatchGroup()
+
+        // 模擬任務 A
+        func taskA() {
+            for i in 1...5 {
+                print("A: \(i)")
+                Thread.sleep(forTimeInterval: 0.2)  // 模擬工作耗時
+            }
+        }
+
+        // 模擬任務 B
+        func taskB() {
+            for i in 1...5 {
+                print("B: \(i)")
+                Thread.sleep(forTimeInterval: 0.15) // 模擬不同的工作耗時
+            }
+        }
+
+        // 將任務 A 加入到併發執行的 group 中
+        group.enter()
+        singleThreadQueue.async(group: group) {
+            taskA()
+            group.leave()
+        }
+
+        // 將任務 B 加入到併發執行的 group 中
+        group.enter()
+        singleThreadQueue.async(group: group) {
+            taskB()
+            group.leave()
+        }
+
+        // 等待兩個任務完成
+        group.notify(queue: DispatchQueue.main) {
+            print("任務 A 和任務 B 已完成")
+        }
+
+        // 為了讓 Playground 持續執行一段時間，防止過早結束
+        RunLoop.main.run(until: Date().addingTimeInterval(5))
+
+    }
     
     //MARK: - GCD Timer
     var timer: DispatchSourceTimer?

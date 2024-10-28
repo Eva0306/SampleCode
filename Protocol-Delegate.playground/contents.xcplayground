@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='raw' buildActiveScheme='true' importAppTypes='true'>
+    <pages>
+        <page name='FollowDesignPattern'/>
+        <page name='NotFollowDesignPattern'/>
+        <page name='FollowDesignPattern2'/>
+        <page name='NotFollowDesignPattern2'/>
+        <page name='Protocol Extension'/>
+        <page name='UIView Extension'/>
+        <page name='Inheritance'/>
+    </pages>
+</playground>
