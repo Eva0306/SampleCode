@@ -1,4 +1,4 @@
-# Scroll View & GCD Sample Code
+# Scroll View, GCD, and Protocol-Delegate Pattern Sample Code
 
 This repository contains sample code demonstrating the use of **UIScrollView**, **Grand Central Dispatch (GCD)**, and **Protocol-Delegate Pattern** in iOS development. 
 
